@@ -1,3 +1,11 @@
-# printing the minimum of 4,12,43.3,19,100
-print("Minimum of 4,12,43.3,19 and 100 is : ",end="")
-print (min( 4,12,43.3,19,100 ) )
+def max_min(data):
+  l = data[0]
+  s = data[0]
+  for num in data:
+    if num> l:
+      l = num
+    elif num< s:
+        s = num
+  return l, s
+
+print(max_min([0, 10, 15, 40, -5, 42, 17, 28, 75,85]))
